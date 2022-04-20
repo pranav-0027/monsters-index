@@ -16,7 +16,6 @@ const App = () => {
       .then((users) => setMonsters(users));
   }, []);
   
-
   useEffect(() => {
     const newFilteredMonsters = monsters.filter((monster) => {
       return monster.name.toLocaleLowerCase().includes(searchField);
